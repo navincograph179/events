@@ -26,12 +26,14 @@ nav .nav-links {
     font-weight: 700;
     line-height: 27.24px;
 }
+
 .home {
     margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .home .home-menu {
     display: flex;
     align-items: center;
@@ -41,6 +43,20 @@ nav .nav-links {
     font-weight: 700;
     margin-bottom: 18px;
 }
+.home-menu p {
+    position: relative;
+}
+
+.home-menu .active::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #41989F;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
 .home .home-content {
     width: 100%;
     height: 442px;
@@ -54,11 +70,13 @@ nav .nav-links {
     padding-top: 65px;
     gap: 30px;
 }
+
 .home-content .inputs {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .home-content .location {
     padding: 18px 28px;
     border: none;
@@ -71,12 +89,15 @@ input::placeholder {
     font-weight: 700;
 }
 
-.home-content .date, .eventtype, .guest {
+.home-content .date,
+.eventtype,
+.guest {
     padding: 18px 18px;
     border-radius: 20px;
     border: none;
     font-size: 20px;
 }
+
 .home-content .search-btn {
     padding: 18px 38px;
     background-color: #41989F;
@@ -87,6 +108,7 @@ input::placeholder {
     border: none;
     cursor: pointer;
 }
+
 .home-content .home-title {
     font-size: 60px;
     font-weight: 700;
@@ -94,6 +116,7 @@ input::placeholder {
     color: white;
     margin-top: 10px;
 }
+
 .home-content .home-subtitle {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -110,6 +133,12 @@ input::placeholder {
     width: 100%;
     height: 442px;
 }
+.top-picks h3 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .top-picks .top-picks-group {
     display: flex;
     gap: 30px;
@@ -124,17 +153,26 @@ input::placeholder {
     width: 100%;
     height: 840px;
 }
+
+.venue-type h3 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .venue-type .venue-group {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
+
 .venue-group .venue-row {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
+
 .venue-row .venue {
     width: 345px;
     height: 292px;
@@ -153,7 +191,12 @@ input::placeholder {
 
 .choose-eventid h2 {
     margin-top: 60px;
+    margin-bottom: 28px;
+    font-size: 49px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .choose-eventid .choose-group {
     display: flex;
     align-items: center;
@@ -161,6 +204,7 @@ input::placeholder {
     gap: 54px;
     margin-top: 30px;
 }
+
 .choose div {
     width: 95px;
     height: 95px;
@@ -177,4 +221,74 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 120px;
+}
+
+.choose h3 {
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.choose p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.offers {
+    width: 100%;
+    height: 476px;
+    background-color: #D7DCE2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.offers h3{
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.offers .offer-group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.offers .offer {
+width: 345px;
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 30px;
+}
+.offer h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.register {
+    width: 100%;
+    height: 330px;
+    background-image: url(./assets/regiester.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 120px;
+}
+
+.footer {
+    margin-top: 150px;
+    width: 100%;
+    height: 355px;
+    background-color: #354151;
 }
